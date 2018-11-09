@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   stats:"errors-only",
   entry: [
-    './newtab/src/scripts/index.tsx'
+    './newtab/src/scripts/index.jsx'
   ],
 
   output: {
@@ -25,7 +25,7 @@ module.exports = {
         exclude: /(node_modules)/,
         include: path.join(__dirname, 'src'),
         query: {
-          presets: ['es2015', '@babel/preset-typescript', 'react']
+          presets: ['es2015', 'react']
         }
       },
       { test: /\.css$/, loader: 'css-loader'}

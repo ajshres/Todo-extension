@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   stats:"errors-only",
   entry: [
-    './event/src/index.ts'
+    './event/src/index.js'
   ],
 
   output: {
